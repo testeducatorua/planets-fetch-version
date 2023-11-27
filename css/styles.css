@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&family=League+Spartan:wght@200;300;500;700&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    /* color: #fff; */
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    background-color: #070724;
+    background-image: url(../assets/background-stars.svg);
+    background-position: 0 0;
+    background-size: cover;
+}
+
+header {
+    padding: 22px 0 27px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__container {
+    max-width: 1370px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__container ul {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.header-navigation-item a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* transition: all .5s; */
+}
+
+.header-navigation-item a:hover {
+    color: #ffffff;
+}
+
+.main__container {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.main__container-mercury {
+    max-width: 940px;
+}
+
+.main__container-venus {
+    max-width: 995px;
+}
+
+.main__container-earth {
+    max-width: 1020px;
+}
+
+.main__container-mars {
+    max-width: 963px;
+}
+
+.main__container-jupiter {
+    padding-top: 96px;
+    padding-bottom: 48px;
+    max-width: 1086px;
+}
+
+.main__container-saturn {
+    padding-top: 69px;
+    max-width: 1128px;
+}
+
+.main__container-uranus {
+    max-width: 1024px;
+}
+
+.main__container-neptune {
+    max-width: 1020px;
+}
+
+.main_content-buttons button:hover {
+    background: rgba(216, 216, 216, 0.2);
+    border: none;
+}
+
+.button__active-mercury {
+    background: #419EBB !important;
+    border: 1px solid #419EBB !important;
+}
+.button__active-venus {
+    background: #EDA249 !important;
+    border: 1px solid #EDA249 !important;
+}
+.button__active-earth {
+    background: #6D2ED5 !important;
+    border: 1px solid #6D2ED5 !important;
+}
+.button__active-mars {
+    background: #D14C32 !important;
+    border: 1px solid #D14C32 !important;
+}
+.button__active-jupiter {
+    background: #D83A34 !important;
+    border: 1px solid #D83A34 !important;
+}
+.button__active-saturn {
+    background: #CD5120 !important;
+    border: 1px solid #CD5120 !important;
+}
+.button__active-uranus {
+    background: #1EC1A2 !important;
+    border: 1px solid #1EC1A2 !important;
+}
+.button__active-neptune {
+    background: #2D68F0 !important;
+    border: 1px solid #2D68F0 !important;
+}
+
+.main__content h1 {
+    font-family: 'Antonio';
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.main__content-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    /* max-width: 350px; */
+    margin-bottom: 25px;
+}
+
+.main__content-source {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 178.571% */
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+}
+
+.main__content-source a{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main_content-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.main_content-buttons button {
+    color: #FFF;
+    width: 100%;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 12px 84px 11px 28px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px; /* 208.333% */
+    letter-spacing: 2.571px;
+    text-transform: uppercase;
+
+    transition: background .5s;
+}
+
+.number {
+    opacity: 0.5;
+}
+
+
+.main__info {
+    max-width: 1110px;
+    margin: 0 auto;
+    color: #fff;
+    padding-bottom: 56px;
+}
+
+.main__info ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main__info ul li {
+    max-width: 255px;
+    width: 100%;
+    height: 128px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 23px 27px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 4px;
+}
+.main__info ul li h4{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 25px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.main__info ul li h3{
+    font-family: 'Antonio';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+}
+
+div.image {
+    height: 666px;
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    justify-content:center;
+}
+
+.main__content {
+    max-width: 350px;
+}
+
+div.hoverLine {
+    display: block;
+    top: -25px;
+    /* position: absolute; */
+}
+
+.burger {
+    display: none;
+}
+
+.circle {
+    display: none;
+}
+
+.chevron {
+    display: none;
+}
+
+.active {
+    display: none;
+}
+
+
+
+@media(max-width:800px) {
+    header {
+        padding: 32px 0 27px;
+    }
+    
+    .header__container {
+        max-width: 1370px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 39px;
+    }
+    
+    .header__container ul {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+
+    .main__container {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.image {
+        height: 449px;
+        display:flex; 
+        flex-direction:column; 
+        align-items:center; 
+        justify-content:center;
+    }
+/*     
+    div.image img {
+        height: 422px;
+    } */
+
+    .main__container-mercury {
+        max-width: 689px;
+    }
+
+    .main__container-mercury div.image img {
+        height: 184px;
+    }
+    
+    .main__container-venus {
+        max-width: 689px;
+    }
+
+    .main__container-venus div.image img {
+        height: 253px;
+    }
+    
+    .main__container-earth {
+        max-width: 689px;
+    }
+
+    .main__container-earth div.image img {
+        height: 285px;
+    }
+    
+    .main__container-mars {
+        max-width: 689px;
+    }
+
+    .main__container-mars div.image img {
+        height: 213px;
+    }
+    
+    .main__container-jupiter {
+        padding-top: 54px;
+        max-width: 689px;
+    }
+
+    .main__container-jupiter div.image img {
+        height: 369px;
+    }
+    
+    .main__container-saturn {
+        padding-top: 69px;
+        max-width: 689px;
+    }
+
+    .main__container-saturn div.image img {
+        height: 422px;
+    }
+    
+    .main__container-uranus {
+        max-width: 689px;
+    }
+
+    .main__container-uranus div.image img {
+        height: 290px;
+    }
+    
+    .main__container-neptune {
+        max-width: 689px;
+    }
+
+    .main__container-neptune div.image img {
+        height: 285px;
+    }
+
+    .main__content {
+        display: flex;
+        gap: 69px;
+        justify-content: center;
+        align-items: center;
+        max-width: 689px;
+    }
+    
+    .main__content h1 {
+        font-size: 48px;
+    }
+    
+    .main__content-text {
+        font-size: 11px;
+        line-height: 22px;
+        max-width: 339px;
+        width: 100%;
+        margin-bottom: 32px;
+        height: 110px;
+    }
+    
+    .main__content-source {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    
+    .main_content-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .main_content-buttons button {
+        width: 281px;
+        height: 40px;
+        padding: 8px 20px 7px;
+        gap:17px;
+    
+        font-size: 9px;
+        letter-spacing: 1.9px;
+    }
+
+    .main__info {
+        max-width: 689px;
+        padding-bottom: 36px;
+    }
+    
+    .main__info ul {
+        gap: 11px;
+    }
+    
+    .main__info ul li {
+        max-width: 164px;
+        height: 88px;
+        padding: 15px 15px 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 4px;
+    }
+
+    .main__info ul li h4{
+        font-size: 8px;
+        line-height: 16px; 
+        letter-spacing: 0.7px;
+    }
+    .main__info ul li h3{
+        font-size: 24px;
+        letter-spacing: -0.9px;
+    }
+    .geology {
+        width: 100px !important;
+        height: 120px !important;
+    }
+
+    
+    div.hoverLine {
+        top: 25px;
+        /* bottom: 0; */
+    }
+    .burger {
+        display: none;
+    }
+    
+    .circle {
+        display: none;
+    }
+    
+    .chevron {
+        display: none;
+    }    
+}
+
+@media(max-width:400px) {
+    body div.shadow {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.8);
+        left: 0;
+        top: 62px;
+    }
+
+    header {
+        padding: 16px 24px;
+        position: relative;
+    }
+    
+    .header__container {
+        max-width: 327px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .burger {
+        background-image: url(../assets/icons/icon-hamburger.svg);
+        width: 24px;
+        height: 17px;
+        display: block;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+
+    .header__container ul {
+        display: none;
+    }
+    nav.burger__menu.burger__menu-active {
+        transform: translateY(0%);
+        transition: all .5s;
+    }
+
+    nav.burger__menu {
+        transform: translateY(-200%);
+        height: 576px;
+        width: 100%;
+        position: absolute;
+        top:62px;
+        left: 0;
+        background-color: #070724;
+        z-index: 10;
+        border-radius: 0 0 8px 8px;
+        transition: all .5s;
+    }
+
+    nav.burger__menu.burger__menu-active ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 0;
+        padding: 24px;
+        max-width: 367px;
+        width: 100%;
+        /* margin: 0 auto; */
+        /* margin: 0; */
+    }
+
+    nav.burger__menu ul li {
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav.burger__menu ul li:nth-child(8) {
+        border-bottom: none;
+    }
+
+    nav.burger__menu ul li a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav.burger__menu ul li a .circle {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #DEF4FC;
+    }
+
+    nav.burger__menu ul li a .text__container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        max-width: 327px;
+        width: 100%;
+        gap: 25px;
+
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px; /* 166.667% */
+        letter-spacing: 1.364px;
+        text-transform: uppercase;
+    }
+
+    div.hoverLine {
+        display: none;
+    } 
+    .chevron {
+        display: inline-block;
+        width: 4px;
+        height: 8px;
+    }
+
+    
+    .main_content-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 43px;
+        position: absolute;
+        top: 62px;
+        padding: 20px 24px;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .main_content-buttons button {
+        position: relative;
+        width: 80px;
+        height: 10px;
+        padding: 0px;
+        gap:0px;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 9px;
+        letter-spacing: 1.9px;
+        background: none !important;
+        border: none !important;
+    }
+    
+    .active {
+        display: block;
+    }
+
+    .main__container {
+        padding-top: 51px;
+        padding-bottom: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+    div.image {
+        padding: 24px 0;
+        height: 256px;
+    } 
+ 
+    div.image img {
+        height: 224px;
+    } 
+
+   .main__container-mercury {
+        max-width: 327px;
+    }
+
+    .main__container-mercury div.image img {
+        height: 111px;
+    }
+    
+    .main__container-venus {
+        max-width: 327px;
+    }
+
+    .main__container-venus div.image img {
+        height: 154px;
+    }
+    
+    .main__container-earth {
+        max-width: 327px;
+    }
+
+    .main__container-earth div.image img {
+        height: 173px;
+    }
+    
+    .main__container-mars {
+        max-width: 327px;
+    }
+
+    .main__container-mars div.image img {
+        height: 129px;
+    }
+    
+    .main__container-jupiter {
+        padding-top: 51px;
+        max-width: 327px;
+    }
+
+    .main__container-jupiter div.image img {
+        height: 205px;
+    }
+    
+    .main__container-saturn {
+        max-width: 327px;
+    }
+
+    .main__container-saturn div.image img {
+        height: 224px;
+    }
+    
+    .main__container-uranus {
+        max-width: 327px;
+    }
+
+    .main__container-uranus div.image img {
+        height: 176px;
+    }
+    
+    .main__container-neptune {
+        max-width: 327px;
+    }
+
+    .main__container-neptune div.image img {
+        height: 173px;
+    }
+
+    .geology {
+        width: 70px !important;
+        height: 85px !important;
+        bottom: 30px !important;
+    }
+
+    .main__content {
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        max-width: 327px;
+        text-align: center;
+    }
+    
+    .main__content h1 {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+    
+    .main__content-text {
+        max-width: 275px;
+        height: 110px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .main__info {
+        max-width: 327px;
+        padding-bottom: 47px;
+    }
+    
+    .main__info ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .main__info ul li {
+        max-width: 327px;
+        height: 48px;
+        padding: 9px 24px 13px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .main__info ul li h3{
+        font-size: 20px;
+        letter-spacing: -0.75px;
+    }
+}
